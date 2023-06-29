@@ -1,9 +1,11 @@
 const express = require('express')
 const uuid = require('uuid')
+import cors from 'cors'
 
-const port = 3000
+const port = 3001
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 
 
